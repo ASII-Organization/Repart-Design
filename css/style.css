@@ -154,6 +154,12 @@ nav .item.active:hover {
     display:inline-block;
     margin: 0 70px;
 }
+.content.home p {
+    margin-top: 10%;
+    color:#eef2fd;
+    font-size: 15px;
+    text-align:center;
+}
 @media(max-width: 980px) {
     nav {
         display:none;
@@ -181,5 +187,8 @@ nav .item.active:hover {
     .buttons span {
         display:block;
         margin: 30px 0;
+    }
+    .content.home p {
+        font-size: 13px;
     }
 }
