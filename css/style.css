@@ -29,6 +29,9 @@ html,body {
     z-index: -1;
     overflow:hidden;
 }
+body {
+    background:#f7f7f7;
+}
 .homebg {
     background:url(../images/homebg.jpg) no-repeat center center;
     background-size: cover;
@@ -159,6 +162,50 @@ nav .item.active:hover {
     color:#eef2fd;
     font-size: 15px;
     text-align:center;
+}
+header.nohome {
+    background:#fff;
+}
+header.nohome nav .item.active {
+    background:#3478a3;
+}
+header.nohome nav .item:hover {
+    background:rgba(12,30,83, 0.2);
+}
+header.nohome nav .item.active:hover {
+    background:rgba(12,30,83, 0.9);
+}
+header.nohome nav .item a {
+    color:#101e44;
+}
+header.nohome nav .item.active a {
+    color:#fff;
+}
+.breadcrumb {
+    width: 100%;
+    height: 69px;
+    background:url(../images/bgbrandcup.png) no-repeat center;
+    background-size: cover;
+    color:#fff;
+    line-height: 69px;
+    font-size: 17px;
+}
+.tools {
+    width: 100%;
+    background:#fff;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #efefef;
+}
+.tools .orderby {
+    float:left;
+}
+.tools .orderby i {
+    cursor:pointer;
+    transition: all .3s ease;
+}
+.tools .orderby i:hover {
+    color:#00aced;
 }
 @media(max-width: 980px) {
     nav {
