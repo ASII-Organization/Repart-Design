@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Repart - Home Page</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+</head>
+<body>
+<header class="nohome">
+    <div class="ui container">
+        <div class="logo">
+            <img src="images/logo-uaic.png" alt="Logo UAIC" />
+        </div>
+        <nav>
+            <div class="item">
+                <a href="">Pagina de start</a>
+            </div>
+            <div class="item">
+                <a href="">Despre</a>
+            </div>
+            <div class="item active">
+                <a href="">Vezi Evenimente</a>
+            </div>
+            <div class="item">
+                <a href="">Contact</a>
+            </div>
+            <div class="clearfloat"></div>
+        </nav>
+        <div class="mobile">
+            <div class="ui icon top right pointing dropdown button black">
+                <i class="icon sidebar"></i>
+                <div class="menu">
+                    <div class="item">
+                        <a href=""><i class="icon home"></i>Pagina de start</a>
+                    </div>
+                    <div class="item">
+                        <a href=""><i class="icon info"></i>Despre</a>
+                    </div>
+                    <div class="item active">
+                        <a href=""><i class="icon calendar"></i>Vezi Evenimente</a>
+                    </div>
+                    <div class="item">
+                        <a href=""><i class="icon mail"></i>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</header>
+<section class="breadcrumb">
+    <div class="ui container">
+        Evenimente
+    </div>
+</section>
+<section class="content">
+    <div class="ui container">
+        <div class="ui three top attached steps">
+            <div class="step">
+                <i class="user icon"></i>
+                <div class="content">
+                    <div class="title">Informații personale</div>
+                    <div class="description">Informatii despre tine sau grupul tau</div>
+                </div>
+            </div>
+            <div class="disabled step">
+                <i class="check icon"></i>
+                <div class="content">
+                    <div class="title">Confirma</div>
+                    <div class="description">Confirma informatiile introduse</div>
+                </div>
+            </div>
+            <div class="disabled step">
+                <i class="university icon"></i>
+                <div class="content">
+                    <div class="title">Evenimente</div>
+                    <div class="description">Alege evenimentele la care vrei sa participi</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached segment formular">
+            <div class="ui form formularDeInscriere">
+                <div class="field">
+                    <label>Te rugam sa selectezi daca vrei sa inscrii o singura persoana sau un grup.</label>
+                    <div class="ui grid stackable selectPerson">
+                        <div class="six wide column">
+                            <div class="ui segment">
+                                <i class="icon user"></i>
+                                <p>O singura persoana</p>
+                                <div class="ui fitted toggle checkbox">
+                                    <input checked="checked" name="tip" value="persoana" type="radio">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="six wide column">
+                            <div class="ui segment">
+                                <i class="icon users"></i>
+                                <p>Grup de persoane</p>
+                                <div class="ui fitted toggle checkbox">
+                                    <input name="tip" value="grup" type="radio">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field persoanaOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Nume<span>*</span></label>
+                            <input type="text" name="nume" placeholder="Nume" />
+                        </div>
+                        <div class="field">
+                            <label>Prenume<span>*</span></label>
+                            <input type="text" name="prenume" placeholder="Prenume" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field persoanaOnly">
+                    <div class="three fields">
+                        <div class="field">
+                            <label>Orasul<span>*</span></label>
+                            <input type="text" name="oras" placeholder="Orasul" />
+                        </div>
+                        <div class="field">
+                            <label>Scoala<span>*</span></label>
+                            <input type="text" name="scoala" placeholder="Scoala" />
+                        </div>
+                        <div class="field">
+                            <label>Clasa<span>*</span></label>
+                            <input type="text" name="clasa" placeholder="Clasa" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field persoanaOnly">
+                    <label>Adresa de email</label>
+                    <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Din cate persoane este alcatuit grupul dumneavoastra (cu tot cu insotitori)?<span>*</span></label>
+                            <input type="text" name="nrPersGrup" placeholder="Numar persoane grup" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>In ce clasa sunt elevii care ne vor vizita?<span>*</span></label>
+                            <input type="text" name="clasaElevi" placeholder="Clasa in care sunt elevii" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>De la ce scoala ne veniti?<span>*</span></label>
+                            <input type="text" name="scoalaGrup" placeholder="Scoala de provenienta">
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Orasul<span>*</span></label>
+                            <input type="text" name="orasGrup" placeholder="Orasul" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Numele si prenumele insotitorului<span>*</span></label>
+                            <input type="text" name="numePrenumeGrup" placeholder="Nume si prenume" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Adresa de email a insotitorului<span>*</span></label>
+                            <input type="text" name="emailGrup" placeholder="Adresa de email" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field grupOnly">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Numarul de telefon al insotitorului<span>*</span></label>
+                            <input type="text" name="telefonGrup" placeholder="Numarul de telefon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Sunteti de acord sa primiti prin email informatii de la Universitatea "Alexandru Ioan-Cuza" din Iasi privind "Saptamana Portilor Deschise" si Admitere 2016?</label>
+                    <div class="ui toggle checkbox">
+                        <input checked="checked" name="newsletter" value="1" type="radio">
+                        <label>Da</label>
+                    </div>
+                    <br /><br />
+                    <div class="ui toggle checkbox">
+                        <input name="newsletter" value="0" type="radio">
+                        <label>Nu</label>
+                    </div>
+                </div>
+                <div class="field persoanaOnly">
+                    <label>Numar de telefon<span>*</span></label>
+                    <input type="text" name="telefon" placeholder="Numar de telefon" />
+                </div>
+                <div class="field">
+                    <div class="ui blue labeled icon submit button"><i class="icon send"></i>Trimite</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="three wide column">
+                <h2>Legături utile</h2>
+                <div class="ui list link">
+                    <a href="">Pagina de start</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Termeni si condiții</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h2>Social</h2>
+                <a href=""><i class="icon facebook"></i></a>
+            </div>
+            <div class="three wide column">
+                <h2>Contact</h2>
+                <div class="ui list">
+                    <div class="item">
+                        <i class="icon mail"></i>
+                        <div class="content">
+                            <a href="mailto:example@email.com">example@email.com</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="icon phone"></i>
+                        <div class="content">
+                            +4 0734 534 321
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Copyright &copy; Universitatea "Alexandru Ioan-Cuza" Iași</p>
+    </div>
+</footer>
+
+<script src="js/front.js"></script>
+</body>
+</html>
